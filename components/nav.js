@@ -41,7 +41,7 @@ const Nav = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="info-nav">
               <img src="https://picsum.photos/150/150" className="photo-nav"/>
-              <p>Hi, my name is Khang Nguyen and im a Senior Software Engineer, welcome to my personal site.</p>
+              <p>Hi, my name is Khang Nguyen and im a Senior Developer, welcome to my personal site.</p>
             </div>
             <hr />
             <ul className="navbar-nav">
@@ -61,6 +61,7 @@ const Nav = () => {
                 </a>
               </li>
             </ul>
+            
           </div>
         </nav>
       ) : (
@@ -77,7 +78,6 @@ const Nav = () => {
 
         .navbar-dark .navbar-brand{
           font-family: 'Segoe UI Bold';
-          margin-left: 25%;
         }
 
         .photo-nav{
