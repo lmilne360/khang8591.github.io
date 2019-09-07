@@ -32,7 +32,6 @@ const Banner = () => {
           <button type="button" className="btn btn-secondary first"><i className="fas fa-arrow-circle-right" />View Portfolio</button>
           <button type="button" className="btn btn-secondary"><i className="fas fa-file-alt" />View Resume</button>
         </div>
-        <img src="https://picsum.photos/400/400" />
       </div>
       <style jsx>
         {`

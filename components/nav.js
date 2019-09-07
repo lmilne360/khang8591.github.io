@@ -69,8 +69,6 @@ const Nav = () => {
       )}
 
       <style jsx>{`
-
-
         hr{
           color: white;
           border-color: white;
