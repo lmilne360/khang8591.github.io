@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import Banner from "../components/banner";
-import { MobileNav } from "../components/nav";
+import { MobileNav, Desktop } from "../components/nav";
+import Link from "next/link";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(true);
@@ -15,6 +16,8 @@ const Home = () => {
       }
     }
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
     window.addEventListener("load", handleResize);
 
@@ -27,11 +30,28 @@ const Home = () => {
     <Layout>
       <div className="container-wrapper">
         <div className="container-fluid no-gutter">
-          {isMobile ? <MobileNav /> : ""}
-          <Banner />
+          {isMobile ? (
+            <div>
+              <MobileNav />
+              <Banner />
+            </div>
+          ) : (
+            ""
+          )}
+          {!isMobile ? (
+            <div>
+              <Desktop>
+                <Banner />
+              </Desktop>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
+
       <style jsx>{`
+        
         .container-wrapper {
           margin: 0;
           padding: 0;
