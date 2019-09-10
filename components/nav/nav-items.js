@@ -6,18 +6,21 @@ const NavItems = props => (
       <li className="nav-item active">
         <Link href="/">
           <a className="nav-link" href="#">
-            <i className="fas fa-user"></i> About me
+            <i className="fas fa-user"></i>
+            <span>About me</span>
           </a>
         </Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">
-          <i className="fas fa-laptop-code"></i>Porfolio
+          <i className="fas fa-laptop-code"></i>
+          <span>Porfolio</span>
         </a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">
-          <i className="fas fa-blog"></i>Blog
+          <i className="fas fa-blog"></i>
+          <span>Blog</span>
         </a>
       </li>
     </ul>
@@ -39,7 +42,7 @@ const NavItems = props => (
           }
         }
 
-        .navbar-nav a {
+        .navbar-nav .nav-link {
           font-family: "Segoe UI Bold";
           color: white;
           font-size: 18px;
