@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import Banner from "../components/banner";
-import { MobileNav, Desktop } from "../components/nav";
+import Desktop from "../components/nav/desktop-nav";
+import MobileNav from "../components/nav/mobile-nav";
 import Link from "next/link";
 
 const Home = () => {

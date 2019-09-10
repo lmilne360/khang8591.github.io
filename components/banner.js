@@ -35,6 +35,21 @@ const Banner = () => {
       </div>
       <style jsx>
         {`
+
+          .container-fluid{
+            max-width: 1280px;
+          }
+
+          @media only screen and (max-width: 400px) {
+            .btn-secondary.first{
+              margin-bottom: 20px;
+            }
+
+            .btn-secondary{
+              width: 100%;
+            }
+          }
+
           .jumbotron {
             background-color: #fafafa;
             padding: 2rem;
