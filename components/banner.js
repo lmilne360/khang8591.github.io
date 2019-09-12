@@ -19,7 +19,7 @@ const Banner = () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("load", handleResize);
     };
-  }, []);
+  },[]);
   return (
     <div className="jumbotron jumbotron-fluid">
       <div className="container-fluid">

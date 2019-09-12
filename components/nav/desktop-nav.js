@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import NavItems from "./nav-items";
 
 const Desktop = props => (

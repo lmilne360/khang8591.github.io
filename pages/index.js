@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import Banner from "../components/banner";
 import Desktop from "../components/nav/desktop-nav";
 import MobileNav from "../components/nav/mobile-nav";
-import Link from "next/link";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(true);
