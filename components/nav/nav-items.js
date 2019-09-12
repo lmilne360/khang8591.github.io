@@ -48,6 +48,7 @@ const NavItems = props => (
           font-size: 18px;
           display: flex;
           flex-flow: row nowrap;
+          align-items: center;
         }
       `}
     </style>
