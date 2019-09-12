@@ -47,6 +47,7 @@ const NavItems = props => (
           color: white;
           font-size: 18px;
           display: flex;
+          flex-flow: row nowrap;
         }
       `}
     </style>
