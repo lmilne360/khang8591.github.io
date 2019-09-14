@@ -51,6 +51,7 @@ const Banner = () => {
           .jumbotron {
             background-color: #fafafa;
             padding: 2rem;
+            margin-bottom: 5em;
           }
 
           .btn-secondary.first{

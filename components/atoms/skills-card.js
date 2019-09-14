@@ -60,6 +60,8 @@ export function SkillCard({ icons, title, description }) {
           font-weight: bold;
           font-color: #292929;
           margin-top: 10px;
+          font-size: 20px;
+          margin-bottom: 10px;
         }
       `}</style>
     </div>

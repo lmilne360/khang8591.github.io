@@ -21,7 +21,7 @@ const Layout = props => (
     <style jsx global>{`
       .section {
         padding: 0 2em;
-        margin-bottom: 2em;
+        margin-bottom: 5em;
       }
 
       .section .content {
