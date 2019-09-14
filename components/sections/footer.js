@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="jumbotron jumbotron-fluid">
       <div className="container-fluid">
-        <div className="meta-wrapper">
+        <div className="form-wrapper">
           <h1 className="display-4 name">Contact</h1>
           <form action="https://formspree.io/khang859@gmail.com" method="POST">
             <div className="form-group">
@@ -35,7 +35,7 @@ const Footer = () => {
                 name="message"
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-dark">
+            <button type="submit" className="btn btn-secondary">
               Submit
             </button>
           </form>
@@ -43,8 +43,14 @@ const Footer = () => {
       </div>
       <style jsx>
         {`
-          .meta-wrapper {
-            width: 40%;
+          .form-wrapper {
+            width: 100%;
+          }
+
+          @media only screen and (min-width: 769px){
+              .form-wrapper{
+                  width: 50%;
+              }
           }
           .name {
             font-family: "Segoe UI Bold";
@@ -55,9 +61,10 @@ const Footer = () => {
           }
 
           .jumbotron {
-            background-color: #fafafa;
+            background-color: #343a40;
             padding: 2rem;
             margin-bottom: 5em;
+            color: #FFFFFF;
           }
 
           .container-fluid {

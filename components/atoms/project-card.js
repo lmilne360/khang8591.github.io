@@ -26,9 +26,15 @@ export function ProjectCard({ title, description, projectUrl }) {
           margin-left: 20px;
           margin-right: 20px;
           padding: 0px 20px 20px 20px;
-          width: 250px;
+          width: 100%;
           font-size: 18px;
           background-color: #fafafa;
+        }
+
+        @media only screen and (min-width: 681px) {
+          div.project-card {
+            width: 250px;
+          }
         }
 
         @media only screen and (min-width: 769px) {
