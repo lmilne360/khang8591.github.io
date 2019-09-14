@@ -28,12 +28,18 @@ export function ProjectCard({ title, description, projectUrl }) {
         }
         .project-card {
           margin-top: 32px;
-          margin-left: 20px;
-          margin-right: 20px;
           padding: 0px 20px 20px 20px;
           width: 100%;
           font-size: 18px;
           background-color: #fafafa;
+        }
+
+        @media only screen and (min-width: 461px) {
+          div.project-card {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 0 20px;
+          }
         }
 
         @media only screen and (min-width: 681px) {

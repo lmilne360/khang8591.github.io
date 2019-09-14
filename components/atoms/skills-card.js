@@ -14,12 +14,20 @@ export function SkillCard({ icons, title, description }) {
       <style jsx>{`
         .skill-card {
           width: 100%;
-          padding: 0 20px;
+          
           font-size: 18px;
           margin-top: 32px;
-          margin-left: 20px;
-          margin-right: 20px;
+          
         }
+
+        @media only screen and (min-width: 461px) {
+          div.skill-card {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 0 20px;
+          }
+        }
+
 
         @media only screen and (min-width: 681px) {
           div.skill-card {

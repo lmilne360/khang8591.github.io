@@ -46,8 +46,6 @@ const Contact = () => {
       <style jsx>
         {`
           .contact-section__form{
-            margin-left: 40px;
-            margin-right: 40px;
             margin-top: 32px;
           }
 
@@ -55,6 +53,14 @@ const Contact = () => {
             width: 100%;
           }
 
+          @media only screen and (min-width: 461px){
+            .contact-section__form{
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+          }
+
+          
           @media only screen and (min-width: 769px){
               .form-wrapper{
                   width: 50%;
