@@ -17,6 +17,14 @@ export function SkillCard({ icons, title, description }) {
           padding: 0 20px;
           font-size: 18px;
           margin-top: 32px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+
+        @media only screen and (min-width: 769px) {
+          div.skill-card {
+            width: 350px;
+          }
         }
 
         .skill-card__icon:not(:first-child) {

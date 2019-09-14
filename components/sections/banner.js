@@ -26,9 +26,8 @@ const Banner = () => {
         <div className="meta-wrapper">
           <h1 className="display-4 name">Khang Nguyen</h1>
           <h1 className="display-6 title">Senior Drupal Developer</h1>
-          <p className="lead">I specialize in both frontend and backend development for Drupal 8. 
-          Sometimes I write about topics im interested in at the time on my blog, check it out.
-          Want to know how I may help your project? Check out my project portfolio and online resume.</p>
+          <p className="lead">I specialize in both frontend and backend development for Drupal 8.
+          Want to know how I may help your project? Check out my porfolio and resume below.</p>
         </div>
       </div>
       <style jsx>

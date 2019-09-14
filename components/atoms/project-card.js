@@ -1,8 +1,4 @@
-export function ProjectCard({
-  title,
-  description,
-  projectUrl
-}) {
+export function ProjectCard({ title, description, projectUrl }) {
   return (
     <div className="project-card">
       <div className="project-card__content">
@@ -19,13 +15,12 @@ export function ProjectCard({
         </a>
       </div>
       <style jsx>{`
-
-      .project-card__content{
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-        justify-content: space-between;
-      }
+        .project-card__content {
+          display: flex;
+          flex-flow: column;
+          height: 100%;
+          justify-content: space-between;
+        }
         .project-card {
           margin-top: 32px;
           margin-left: 20px;
@@ -34,6 +29,15 @@ export function ProjectCard({
           width: 250px;
           font-size: 18px;
           background-color: #fafafa;
+        }
+
+        @media only screen and (min-width: 769px) {
+          div.project-card {
+            width: 350px;
+          }
+          .project-card__btn-link{
+            width: 50%;
+          }
         }
 
         .project-card__btn-link {
