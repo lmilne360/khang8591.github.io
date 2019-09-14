@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
-import Desktop from "../components/nav/desktop-nav";
-import MobileNav from "../components/nav/mobile-nav";
 import Content from "../components/content";
 
 const Home = () => {
@@ -30,23 +28,7 @@ const Home = () => {
     <Layout>
       <div className="container-wrapper">
         <div className="container-fluid no-gutter">
-          {isMobile ? (
-            <div>
-              <MobileNav />
-              <Content />
-            </div>
-          ) : (
-            ""
-          )}
-          {!isMobile ? (
-            <div>
-              <Desktop>
-                <Content />
-              </Desktop>
-            </div>
-          ) : (
-            ""
-          )}
+          <Content />
         </div>
       </div>
 
