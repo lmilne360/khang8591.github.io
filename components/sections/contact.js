@@ -1,10 +1,12 @@
-const Footer = () => {
+import {SectionTitle} from "../atoms/section-title";
+
+const Contact = () => {
   return (
-    <div className="jumbotron jumbotron-fluid">
-      <div className="container-fluid">
+    <div className="contact-section section">
+      <div className="contact-section__content content">
         <div className="form-wrapper">
-          <h1 className="display-4 name">Contact</h1>
-          <form action="https://formspree.io/khang859@gmail.com" method="POST">
+          <SectionTitle title="CONTACT ME" />
+          <form action="https://formspree.io/khang859@gmail.com" method="POST" className="contact-section__form">
             <div className="form-group">
               <label htmlFor="nameInput">Name</label>
               <input
@@ -22,8 +24,8 @@ const Footer = () => {
                 type="email"
                 className="form-control"
                 id="inputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
+                aria-describedby="emailAddress"
+                placeholder="Email"
               />
             </div>
             <div className="form-group">
@@ -43,6 +45,12 @@ const Footer = () => {
       </div>
       <style jsx>
         {`
+          .contact-section__form{
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 32px;
+          }
+
           .form-wrapper {
             width: 100%;
           }
@@ -52,31 +60,11 @@ const Footer = () => {
                   width: 50%;
               }
           }
-          .name {
-            font-family: "Segoe UI Bold";
-            font-size: 48px;
-          }
-          .container-fluid {
-            max-width: 1280px;
-          }
 
-          .jumbotron {
-            background-color: #343a40;
-            padding: 2rem;
-            margin-bottom: 5em;
-            color: #FFFFFF;
-          }
-
-          .container-fluid {
-            justify-content: center;
-            display: flex;
-            flex-flow: column;
-            margin: 0 auto;
-          }
         `}
       </style>
     </div>
   );
 };
 
-export default Footer;
+export default Contact;
