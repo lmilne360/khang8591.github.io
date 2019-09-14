@@ -29,8 +29,6 @@ const Banner = () => {
           <p className="lead">I specialize in both frontend and backend development for Drupal 8. 
           Sometimes I write about topics im interested in at the time on my blog, check it out.
           Want to know how I may help your project? Check out my project portfolio and online resume.</p>
-          <button type="button" className="btn btn-secondary first"><i className="fas fa-arrow-circle-right" />View Portfolio</button>
-          <button type="button" className="btn btn-secondary"><i className="fas fa-file-alt" />View Resume</button>
         </div>
       </div>
       <style jsx>
@@ -92,10 +90,6 @@ const Banner = () => {
 
           .lead{
             margin-bottom: 20px;
-          }
-
-          .meta-wrapper{
-            margin-bottom: 30px;
           }
 
           img{
