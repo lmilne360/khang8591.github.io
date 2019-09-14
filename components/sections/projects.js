@@ -1,4 +1,4 @@
-import { SectionTitle } from "./section-title";
+import { SectionTitle } from "../section-title";
 
 export function Projects() {
   return (

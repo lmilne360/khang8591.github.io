@@ -1,5 +1,5 @@
-import { SectionTitle } from "./section-title";
-import { SkillCard } from "./skills-card";
+import { SectionTitle } from "../section-title";
+import { SkillCard } from "../skills-card";
 
 const Skills = props => (
   <div className="skills-section section">

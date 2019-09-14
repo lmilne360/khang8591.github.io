@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../components/layout";
-import Content from "../components/content";
+import Layout from "../components/container/layout";
+import Content from "../components/container/content";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(true);

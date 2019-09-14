@@ -1,6 +1,6 @@
-import Banner from "./banner";
-import Skills from "./skills";
-import { Projects } from "./projects";
+import Banner from "../sections/banner";
+import Skills from "../sections/skills";
+import { Projects } from "../sections/projects";
 
 const Content = () => (
     <div className="content">
