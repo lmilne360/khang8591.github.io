@@ -6,13 +6,18 @@ export function ProjectCard({ title, description, projectUrl }) {
           <div className="project-card__title">{title}</div>
           <div className="project-card__description">{description}</div>
         </div>
-        <a
+        {
+          projectUrl === "comming-soon" ? 
+            <button className="project-card__btn-link btn btn-secondary" disabled>Coming soon...</button>
+          : <a
           className="project-card__btn-link btn btn-dark"
           href={projectUrl}
           role="button"
         >
           Visit Site
         </a>
+        }
+        
       </div>
       <style jsx>{`
         .project-card__content {

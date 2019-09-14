@@ -8,6 +8,11 @@ export function Projects() {
         <SectionTitle title="FEATURED PROJECTS" />
         <div className="projects-section__projects">
           <ProjectCard
+            title="Drupal 8 Profile"
+            description="Will be used to upgrade the ny.gov and governor.ny.gov sites."
+            projectUrl="comming-soon"
+          />
+          <ProjectCard
             title="Ny.gov"
             description="Official Website of New York State."
             projectUrl="https://www.ny.gov/"
