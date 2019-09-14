@@ -33,7 +33,6 @@ const Home = () => {
       </div>
 
       <style jsx>{`
-        
         .container-wrapper {
           margin: 0;
           padding: 0;
