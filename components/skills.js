@@ -2,8 +2,8 @@ import { SectionTitle } from "./section-title";
 import { SkillCard } from "./skills-card";
 
 const Skills = props => (
-  <div className="skills-section">
-    <div className="skills-section__content">
+  <div className="skills-section section">
+    <div className="skills-section__content content">
       <SectionTitle title="WHAT I DO" />
       <div className="skills-section__tech">
         <SkillCard
@@ -25,18 +25,9 @@ const Skills = props => (
     </div>
     <style jsx>
       {`
-        .skills-section {
-          padding: 0 2em;
-          margin-bottom: 2em;
-        }
         .skills-section__tech {
           display: flex;
           flex-flow: row wrap;
-        }
-        .skills-section__content {
-          margin: 0 auto;
-          max-width: 1280px;
-          padding: 0 15px;
         }
       `}
     </style>
