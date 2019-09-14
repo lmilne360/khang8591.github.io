@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
-import Banner from "../components/banner";
 import Desktop from "../components/nav/desktop-nav";
 import MobileNav from "../components/nav/mobile-nav";
+import Content from "../components/content";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(true);
@@ -33,7 +33,7 @@ const Home = () => {
           {isMobile ? (
             <div>
               <MobileNav />
-              <Banner />
+              <Content />
             </div>
           ) : (
             ""
@@ -41,7 +41,7 @@ const Home = () => {
           {!isMobile ? (
             <div>
               <Desktop>
-                <Banner />
+                <Content />
               </Desktop>
             </div>
           ) : (
