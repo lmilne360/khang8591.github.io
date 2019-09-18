@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export && touch out/.nojekyll",
-    "wexport": "next build && next export && type nul > out/.nojekyll && cd ./out && git init && git remote add github git@github.com:khang8591/khang8591.github.io.git && git add . && git commit -m \"automated commit\" && git push github master -f"
+    "wexport": "next build && next export && type nul > out/.nojekyll && cd ./out && git init && git remote add github git@gith.com:khang8591/khang8591.github.io.git && git add . && git commit -m \"automated commit\" && git push github master -f"
   },
   "dependencies": {
     "next": "9.0.5",

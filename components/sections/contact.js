@@ -1,6 +1,6 @@
 import {SectionTitle} from "../atoms/section-title";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <div className="contact-section section">
       <div className="contact-section__content content">
@@ -72,5 +72,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

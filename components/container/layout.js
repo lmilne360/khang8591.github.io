@@ -4,7 +4,6 @@ const Layout = props => (
   <div>
     <Head>
       <title>Khang Nguyen</title>
-      <link rel="shortcut icon" href="/static/logo.ico" />
       <link rel="stylesheet" href="/static/fonts/segoe-ui/style.css" />
       <link
         rel="stylesheet"

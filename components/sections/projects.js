@@ -1,7 +1,7 @@
 import { SectionTitle } from "../atoms/section-title";
 import { ProjectCard } from "../atoms/project-card";
 
-export function Projects() {
+export default function Projects() {
   return (
     <div className="projects-section section">
       <div className="projects-section__content content">

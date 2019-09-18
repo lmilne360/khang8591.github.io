@@ -1,34 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Layout from "../components/container/layout";
-import Content from "../components/container/content";
+import Banner from "../components/sections/banner";
+import Skills from "../components/sections/skills";
+import Projects from "../components/sections/projects";
+import Contact from "../components/sections/contact";
 
-const Home = () => {
-  const [isMobile, setIsMobile] = useState(true);
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    }
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("load", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("load", handleResize);
-    };
-  }, []);
+export default function Home() {
   return (
     <Layout>
       <div className="container-wrapper">
         <div className="container-fluid no-gutter">
-          <Content />
+          <div className="content">
+            <Banner />
+            <Skills />
+            <Projects />
+            <Contact />
+          </div>
         </div>
       </div>
 
@@ -49,5 +36,4 @@ const Home = () => {
       `}</style>
     </Layout>
   );
-};
-export default Home;
+}
